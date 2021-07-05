@@ -1,0 +1,220 @@
+.header
+    display: grid
+    // grid-template-rows: 12.397% 2.149% 65.289% 6.529% 13.636%
+    grid-template-rows: 120px 20.8px 543px 63.2px 132px
+    grid-template-columns: 7.031% 39.427% 3.698% 23.073% 19.74% 7.031%
+    // grid-template-columns: 135px 757px 71px 443px 379px 135px
+
+    &-logo
+        grid-area: 1 / 2 / span 1 / span 4
+        z-index: 2
+        font-size: 57.6px
+        font-weight: 700
+        color: #FE043C
+        margin-right: 100px
+
+    &-text
+        grid-area: 3 / 2 / span 1 / span 1
+        z-index: 2
+        line-height: 0.7
+        margin-top: 58px
+
+        &__title
+            font-size: 160px
+            margin: 0
+            color: #2E266F
+            opacity: 0.05
+
+        &__subtitle
+            font-size: 56px
+            line-height: 72px
+            color: #2E266F
+            margin: 0 0 32px
+
+    &-inner
+        grid-area: 1 / 2 / span 1 / span 4
+        z-index: 2
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    &-hero
+        display: flex
+        justify-content: space-between
+        min-width: 760px
+
+    &-nav
+        padding-top: 28px
+
+        &__link
+            display: inline-block
+            vertical-align: top
+            margin: 0 20px
+            color: #2E266F
+            font-size: 12.8px
+            font-weight: 400
+            text-decoration: none
+
+    &-user
+        display: flex
+        justify-content: space-between
+        min-width: 92px
+
+        &__img
+            width: 41.6px
+            height: 41.6px
+            padding: 8.8px
+
+        &__icon
+            width: 41.6px
+            height: 41.6px
+            background-color: #FFFFFF
+            border-radius: 40px
+            position: relative
+            text-align: center
+
+        &__text
+            margin-right: 8px
+            margin-left: 10px
+            color: #FFFFFF
+
+        &__item
+            width: 8px
+            height: 4px
+
+        &__list
+            display: flex
+            align-items: center
+
+    &-search
+        width: 536px
+        height: 72px
+        display: flex
+        justify-content: flex-end
+
+        &__input
+            outline: none
+            border: none
+            width: 536px
+            height: 72px
+            padding: 28.8px
+            font-size: 14px
+            background-color: #FFFFFF
+            position: absolute
+
+        &__input::placeholder
+            color: #2E266F
+            opacity: 0.6
+
+        &__btn
+            position: absolute
+            width: 160px
+            height: 57.6px
+            font-weight: 600
+            margin: 7px
+            border-top-left-radius: 48px
+            background: #FE043C
+            border: none
+            font-size: 24px
+            color: #FFFFFF
+            cursor: pointer
+
+    &-img1
+        grid-area: 3 / 4 / span 1 / span 2
+        z-index: 4
+
+        &__item1
+            width: 100%
+
+    &-img2
+        grid-area: 3 / 4 / span 1 / span 2
+        z-index: 3
+
+        &__item2
+            width: 65%
+            margin-top: -130px
+            margin-left: 160px
+
+    &-img3
+        grid-area: 3 / 4 / span 1 / span 2
+        z-index: 2
+
+        &__item3
+            width: 55%
+            margin-top: 19px
+
+    &-img4
+        grid-area: 3 / 4 / span 1 / span 2
+        z-index: 2
+
+        &__item4
+            width: 55%
+            margin-top: 272px
+
+    &-address
+        grid-area: 4 / 1 / span 1 / span 2
+        z-index: 2
+        width: 224px
+        height: 52px
+        background-color: #FE043C
+        border-radius: 0px 80px 80px 0px
+        display: flex
+        align-items: center
+
+        &__text
+            margin: 0
+            font-size: 24px
+            color: #FFFFFF
+            padding: 14px
+
+        &__item
+            margin-left: 40px
+
+    &-arrows
+        grid-area: 5 / 5 / span 1 / span 1
+        z-index: 3
+        max-width: 140px
+        display: flex
+        justify-content: space-between
+        margin-left: 160px
+        margin-top: 30px
+
+    &-circle
+        grid-area: 5 / 5 / span 1 / span 1
+        z-index: 2
+        display: flex
+        justify-content: space-between
+        margin-left: 144px
+        margin-top: 30px
+
+        &__item
+            margin-top: -10px
+            margin-right: -14px
+
+.arrows
+    &__left, &__right
+        &:hover
+            cursor: pointer
+
+.arrows__left
+    width: 50px
+    height: 24px
+    color: #FFFFFF
+
+.arrows__right
+    transform: scaleX(-1)
+    margin-left: 10px
+    width: 50px
+    height: 24px
+    color: #FFFFFF
+
+
+.b-left
+    grid-area: 1 / 1 / span 5 / span 4
+    z-index: 1
+    background-color: #FFF5EC
+
+.b-right
+    grid-area: 1 / 5 / span 5 / span 2
+    z-index: 1
+    background-color: #FE043C
