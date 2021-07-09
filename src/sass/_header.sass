@@ -366,4 +366,161 @@
     .b-right
         grid-area: 1 / 4 / span 5 / span 2
 
+@media ( max-width: 768px )
+    .header
+        display: grid
+        grid-template-rows: 70px 37px 346px 85px 514px 104px
+        grid-template-columns: minmax(32px, 1fr) 378px 13px 97px 55px minmax(32px, 1fr)
+
+        &-inner
+            grid-area: 1 / 2 / span 1 / span 5
+
+        &-logo
+            font-size: 48px
+
+        &-nav
+            display: none
+
+        &-user
+            display: none
+
+        &-text
+            z-index: 3
+
+            &__title
+                font-size: 100px
+
+            &__subtitle
+                font-size: 36px
+                line-height: 48px
+
+        &-search
+            width: 462px
+            height: 90px
+
+            &__input
+                width: 462px
+                height: 90px
+                padding: 36px
+                font-size: 18px
+
+            &__btn
+                width: 146px
+                height: 72px
+                margin: 9px
+                border-top-left-radius: 60px
+                font-size: 30px
+
+        &-img1 
+            grid-area: 5 / 2 / span 1 / span 3
+
+            &__item1 
+                width: 116%
+                margin-left: -20px
+
+        &-img2 
+            grid-area: 5 / 2 / span 1 / span 3
+
+            &__item2 
+                width: 75%
+                margin-left: 209px
+                margin-top: -152px
+
+        &-img3 
+            grid-area: 5 / 2 / span 1 / span 1
+
+            &__item3 
+                width: 75%
+                margin-left: 19px
+
+        &-img4 
+            grid-area: 5 / 2 / span 1 / span 1
+
+            &__item4 
+                width: 75%
+                margin-left: 19px
+                margin-top: 193px
+
+        &-address
+            grid-area: 4 / 1 / span 1 / span 2
+            width: 280px
+            height: 65px
+
+        &-arrows
+            grid-area: 6 / 5 / span 1 / span 1
+            align-self: start
+            margin-right: 0
+
+        &-btn
+            display: grid
+            margin-right: 0
+
+            &__menu
+                display: block
+                width: 50px
+                height: 50px
+                position: relative
+
+            &__item
+                position: absolute
+                top: 50%
+                margin-top: 0
+                left: 50%
+                margin-left: -20px
+                width: 23px
+                height: 3px
+                background-color: #FFF5EC
+
+                &:before
+                    position: absolute
+                    top: 50%
+                    margin-top: -1px
+                    left: 50%
+                    margin-left: -12px
+                    width: 23px
+                    height: 3px
+                    background-color: #FFF5EC
+                    
+                &:after
+                    position: absolute
+                    top: 50%
+                    margin-top: -1px
+                    left: 50%
+                    margin-left: -4px
+                    width: 15px
+                    height: 3px
+                    background-color: #FFF5EC
+                
+                &:before
+                    content: ''
+                    transform: translateY(-5px)
+
+                &:after
+                    content: ''
+                    transform: translateY(5px)
+
+    .img
+        margin-top: 60px
+
+    .circle
+        width: 30px
+        height: 30px
+
+    .arrows__left
+        width: 34px
+        height: 16px
+        margin-left: -21px
+        margin-right: 19px 
+
+    .arrows__right
+        transform: scaleX(-1)
+        width: 34px
+        height: 16px
+        margin-right: -20px
+
+    .b-left
+        grid-area: 1 / 1 / span 6 / span 4
+
+    .b-right
+        grid-area: 1 / 4 / span 6 / span 3
     
