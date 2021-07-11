@@ -1,0 +1,174 @@
+.restaurants
+    display: grid
+    grid-template-rows: 50px 211px 120px 383px 253px 50px 211px
+    grid-template-columns: minmax(32px, 1fr) 519px 40px 172px 149px 318px 70px 211px 201px minmax(32px, 1fr)
+
+    &__title
+        grid-area: 2 / 2 / span 1 / span 3
+        border-left-style: solid
+        border-left-width: 25px
+        border-left-color: #FE043C 
+        z-index: 2
+        font-size: 48px
+        line-height: 62px
+        color: #2E266F
+        padding-left: 30px
+        padding-top: 10px
+
+    &__text
+        grid-area: 2 / 6 / span 1 / span 3
+        z-index: 2
+        font-size: 14px
+        line-height: 24px
+        font-weight: 400
+        color: #707070
+        padding-top: 63px
+
+    &__photo1
+        grid-area: 4 / 1 / span 2 / span 2
+        z-index: 3
+
+    &-info-left
+        grid-area: 5 / 1 / span 1 / span 2
+        background-color: rgba(254, 4, 60, 0.7)
+        border-radius: 0px 0px 20px 20px
+        z-index: 3
+        padding: 40px 0 82px 60px
+        
+        &__title
+            font-size: 24px
+            font-weight: 700
+            color: #FFFFFF
+            margin: 0 0 15px 0
+
+        &__text
+            font-size: 14px
+            line-height: 24px
+            font-weight: 400
+            color: #FFFFFF
+            margin-bottom: 20px
+            max-width: 372px
+
+    &-inner
+        display: flex
+
+        &__item
+            width: 20px
+            height: 25px
+
+        &__address
+            font-size: 14px
+            font-weight: 400
+            color: #FFFFFF
+            padding: 5px 0 5px 10px
+
+    &-btn
+        text-align: right
+        margin-top: -14px
+
+    &__btn
+        background: #FFFFFF
+        border-radius: 100px 0px 0px 100px
+        width: 208px
+        height: 58px
+        color: #FE043C
+        font-size: 14px
+        font-weight: 400
+        border: none
+        cursor: pointer
+
+    &__photo2
+        grid-area: 4 / 4 / span 2 / span 3
+        z-index: 3
+
+    &-info-right
+        grid-area: 5 / 4 / span 1 / span 3
+        background-color: rgba(254, 4, 60, 0.7)
+        border-radius: 0px 0px 20px 20px
+        z-index: 3
+        padding: 40px 0 82px 60px
+        
+        &__title
+            font-size: 24px
+            font-weight: 700
+            color: #FFFFFF
+            margin: 0 0 15px 0
+
+        &__text
+            font-size: 14px
+            line-height: 24px
+            font-weight: 400
+            color: #FFFFFF
+            margin-bottom: 20px
+            max-width: 372px
+
+    &-inner
+        display: flex
+
+        &__item
+            width: 20px
+            height: 25px
+
+        &__address
+            font-size: 14px
+            font-weight: 400
+            color: #FFFFFF
+            padding: 5px 0 5px 10px
+
+    &-btn
+        text-align: right
+        margin-top: -14px
+
+    &__btn
+        background: #FFFFFF
+        border-radius: 100px 0px 0px 100px
+        width: 208px
+        height: 58px
+        color: #FE043C
+        font-size: 14px
+        font-weight: 400
+        border: none
+        cursor: pointer
+
+    &-arrow
+        grid-area: 4 / 8 / span 1 / span 1
+        z-index: 2
+
+        &__inner
+            display: flex
+            justify-content: center
+            margin-bottom: 20px
+            margin-top: 288px
+
+        &__item
+            margin-left: -25px
+
+        &__text
+            font-size: 14px
+            font-weight: 400
+            color: #FE043C
+            margin-left: 114px
+
+    &-item1
+        grid-area: 3 / 1 / span 1 / span 2
+        z-index: 2
+        margin-left: 20px
+        margin-top: 50px
+
+    &-item2 
+        grid-area: 5 / 6 / span 1 / span 1
+        z-index: 2
+        margin-left: 38px
+        margin-top: 235px
+
+    &-item3 
+        grid-area: 5 / 6 / span 2 / span 1
+        z-index: 2
+        transform: rotate(90deg)
+        margin-left: 171px
+        margin-top: 27px
+
+.background
+    grid-area: 1 / 1 / span 7 / span 10
+    z-index: 1
+    background-color: #FFF5EC
