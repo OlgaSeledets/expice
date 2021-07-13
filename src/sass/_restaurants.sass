@@ -37,6 +37,8 @@
         border-radius: 0px 0px 20px 20px
         z-index: 3
         padding: 40px 0 82px 60px
+        width: 639px
+        height: 253px
         
         &__title
             font-size: 24px
@@ -92,6 +94,8 @@
         border-radius: 0px 0px 20px 20px
         z-index: 3
         padding: 40px 0 82px 60px
+        width: 639px
+        height: 253px
         
         &__title
             font-size: 24px
@@ -173,10 +177,10 @@
         margin-left: 171px
         margin-top: 27px
 
-.background
-    grid-area: 1 / 1 / span 7 / span 10
-    z-index: 1
-    background-color: #FFF5EC
+    &-background
+        grid-area: 1 / 1 / span 7 / span 10
+        z-index: 1
+        background-color: #FFF5EC
 
 @media ( max-width: 1200px )
     .restaurants
@@ -360,9 +364,203 @@
             margin-left: 171px
             margin-top: 14px
 
-    .background
-        grid-area: 1 / 1 / span 7 / span 8
-        z-index: 1
-        background-color: #FFF5EC
+        &-background
+            grid-area: 1 / 1 / span 7 / span 8
+            z-index: 1
+            background-color: #FFF5EC
+
+@media ( max-width: 768px )
+    .restaurants
+        display: grid
+        grid-template-rows: 60px 167px 142px 47px 298px 195px 30px 298px 195px 50px 76px 33px
+        grid-template-columns: minmax(32px, 1fr) 542px minmax(32px, 1fr)
+
+        &__title
+            grid-area: 2 / 2 / span 1 / span 3
+            border-left-style: solid
+            border-left-width: 25px
+            border-left-color: #FE043C 
+            z-index: 2
+            font-size: 36px
+            line-height: 48px
+            color: #2E266F
+            padding-left: 30px
+            padding-top: 10px
+            max-width: 663px
+
+        &__text
+            grid-area: 3 / 2 / span 1 / span 3
+            z-index: 2
+            font-size: 14px
+            line-height: 24px
+            font-weight: 400
+            color: #707070
+            padding-top: 0
+            margin-left: 58px
+            max-width: 471px
+
+        &__photo1
+            grid-area: 5 / 2 / span 1 / span 1
+            z-index: 3
+            width: 494px
+            height: 493px
+            margin-left: 27px
+
+        &-info-left
+            grid-area: 6 / 2 / span 1 / span 2
+            background-color: rgba(254, 4, 60, 0.7)
+            border-radius: 0px 0px 20px 20px
+            z-index: 3
+            padding: 21px 0 28px 31px
+            width: 494px
+            height: 195px
+            margin-left: 27px
+        
+            &__title
+                font-size: 24px
+                font-weight: 700
+                color: #FFFFFF
+                margin: 0 0 15px 0
+
+            &__text
+                font-size: 14px
+                line-height: 24px
+                font-weight: 400
+                color: #FFFFFF
+                margin-bottom: 20px
+                max-width: 372px
+
+        &-inner
+            display: flex
+
+            &__item
+                width: 20px
+                height: 25px
+
+            &__address
+                font-size: 14px
+                font-weight: 400
+                color: #FFFFFF
+                padding: 5px 0 5px 10px
+
+        &-btn
+            text-align: right
+            margin-top: -14px
+
+        &__btn
+            background: #FFFFFF
+            border-radius: 100px 0px 0px 100px
+            width: 208px
+            height: 58px
+            color: #FE043C
+            font-size: 14px
+            font-weight: 400
+            border: none
+            cursor: pointer
+
+        &__photo2
+            grid-area: 8 / 2 / span 1 / span 1
+            z-index: 3
+            width: 494px
+            height: 493px
+            margin-left: 27px
+
+        &-info-right
+            grid-area: 9 / 2 / span 1 / span 1
+            background-color: rgba(254, 4, 60, 0.7)
+            border-radius: 0px 0px 20px 20px
+            z-index: 3
+            padding: 21px 0 28px 31px
+            width: 494px
+            height: 195px
+            margin-left: 27px
+        
+            &__title
+                font-size: 24px
+                font-weight: 700
+                color: #FFFFFF
+                margin: 0 0 15px 0
+
+            &__text
+                font-size: 14px
+                line-height: 24px
+                font-weight: 400
+                color: #FFFFFF
+                margin-bottom: 20px
+                max-width: 372px
+
+        &-inner
+            display: flex
+
+            &__item
+                width: 20px
+                height: 25px
+
+            &__address
+                font-size: 14px
+                font-weight: 400
+                color: #FFFFFF
+                padding: 5px 0 5px 10px
+
+        &-btn
+            text-align: right
+            margin-top: -14px
+
+        &__btn
+            background: #FFFFFF
+            border-radius: 100px 0px 0px 100px
+            width: 160px
+            height: 45px
+            color: #FE043C
+            font-size: 14px
+            font-weight: 400
+            border: none
+            cursor: pointer
+            margin-top: -15px
+
+        &-arrow
+            grid-area: 11 / 2 / span 1 / span 1
+            z-index: 2
+            max-width: 206px
+            margin-left: 155px
+
+            &__inner
+                display: flex
+                justify-content: center
+                margin-bottom: 21px
+                margin-top: 0
+
+            &__item
+                margin-left: -25px
+
+            &__text
+                font-size: 14px
+                font-weight: 400
+                color: #FE043C
+                margin-left: 114px
+
+        &-item1
+            grid-area: 4 / 2/ span 1 / span 1
+            z-index: 2
+            margin-left: 4px
+            margin-top: 28px
+
+        &-item2 
+            grid-area: 10 / 2 / span 1 / span 1
+            z-index: 2
+            margin-left: 241px
+            margin-top: -17px
+
+        &-item3 
+            grid-area: 9 / 2 / span 1 / span 1
+            z-index: 2
+            transform: rotate(90deg)
+            margin-left: 374px
+            margin-top: -30px
+
+        &-background
+            grid-area: 1 / 1 / span 12 / span 7
+            z-index: 1
+            background-color: #FFF5EC
 
     

@@ -1,0 +1,109 @@
+.booking
+    display: grid
+    grid-template-rows: 195px 50px 100px 340px 120px 265px
+    grid-template-columns: 275px 413px 544px 273px 50px 365px
+
+    &-block
+        grid-area: 3 / 2 / span 3 / span 3
+        z-index: 2
+        width: 1230px
+        height: 560px
+        background-color: #FFFFFF
+
+    &-card
+        grid-area: 4 / 3 / span 1 / span 1
+        z-index: 2
+
+        &__title
+            font-size: 36px
+            color: #2E266F
+            font-weight: 500
+            text-align: center
+            margin-bottom: 60px
+
+        &__line
+            width: 230px
+            height: 15px
+            background-color: #FE043C
+            margin: 0 auto
+
+        &__search
+            width: 544px
+            height: 90px
+            display: flex
+            justify-content: flex-end
+
+            &-input
+                outline: none
+                border: none
+                width: 544px
+                height: 90px
+                padding: 36px
+                font-size: 18px
+                background-color: #FFFFFF
+                box-shadow: 2px 2px 30px 2px #FFF5EC
+                position: absolute
+
+            &-input::placeholder
+                color: #2E266F
+                opacity: 0.6
+
+            &-btn
+                position: absolute
+                width: 128px
+                height: 62px
+                font-weight: 600
+                margin: 14px
+                background: #FE043C
+                border: none
+                font-size: 30px
+                color: #FFFFFF
+                cursor: pointer
+
+    &-item1
+        grid-area: 1 / 1 / span 6 / span 2
+        z-index: 3
+        margin-top: -302px
+
+    &-item2
+        grid-area: 3 / 5 / span 1 / span 2
+        z-index: 2
+        margin-left: 42px
+
+    &-item3
+        grid-area: 2 / 4 / span 1 / span 2
+        z-index: 2
+        margin-left: 6px
+
+    &-item4
+        grid-area: 2 / 5 / span 3 / span 1
+        z-index: 2
+        margin-top: 71px
+
+    &-item5 
+        grid-area: 6 / 2 / span 1 / span 1
+        z-index: 2
+        margin-left: 50px
+        margin-top: 16px
+
+    &-background
+        grid-area: 1 / 1 / span 6 / span 6
+        z-index: 1
+        background-color: #FFEDDE
+
+@media ( max-width: 1200px )
+    .booking
+        display: grid
+        grid-template-rows: 125px 75px 41px 340px 36px 126px
+        grid-template-columns: 333px 544px 94px 70px 153px
+
+        &-block
+            grid-area: 3 / 1 / span 3 / span 3
+            z-index: 2
+            width: 971px
+            height: 417px
+            background-color: #FFFFFF
+
+        &-card
+            grid-area: 4 / 2 / span 1 / span 1
+            z-index: 2
