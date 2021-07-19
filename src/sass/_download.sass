@@ -1,0 +1,182 @@
+.download
+    display: grid
+    grid-template-rows: 100px 295px 311px 339px 50px
+    grid-template-columns: 135px 514px 300px 753px 220px
+
+    &-phone
+        grid-area: 2 / 4 / span 3 / span 1
+        z-index: 3
+        margin-top: -60px
+        margin-left: 132px
+        width: 653px
+        height: 1144px
+
+    &-screen
+        grid-area: 2 / 4 / span 3 / span 1
+        z-index: 3
+        margin-top: 18px
+        margin-left: 316px
+        width: 405px
+        height: 875px
+
+    &-item
+        grid-area: 2 / 4 / span 3 / span 1
+        z-index: 2
+        margin-top: 285px
+        margin-left: -115px
+        width: 677px
+        height: 687px
+
+    &-info
+        grid-area: 3 / 2 / span 1 / span 1
+        z-index: 2
+
+        &-link
+            display: flex
+            justify-content: space-between
+            max-width: 376px
+            margin-left: 64px
+
+            &-left
+                background: #000000
+                border-radius: 10px
+                width: 178px
+                height: 49px
+                padding: 9px 22px
+                display: flex
+                justify-content: space-between
+
+                &__title
+                    color: #FFFFFF
+                    font-size: 12px
+                    font-weight: 400
+                    display: block
+
+                &__subtitle
+                    text-decoration: none
+                    font-size: 14px
+                    font-weight: 500
+                    color: #FFFFFF
+                    cursor: pointer
+
+            &-right
+                background: #000000
+                border-radius: 10px
+                width: 178px
+                height: 49px
+                padding: 9px 7px 9px 22px
+                display: flex
+                justify-content: space-between
+
+                &__title
+                    color: #FFFFFF
+                    font-size: 12px
+                    font-weight: 400
+                    display: block
+
+                &__subtitle
+                    text-decoration: none
+                    font-size: 14px
+                    font-weight: 500
+                    color: #FFFFFF
+                    cursor: pointer
+
+    &__title
+        border-left-style: solid
+        border-left-width: 25px
+        height: 140px
+        border-left-color: #FE043C 
+        z-index: 2
+        font-size: 48px
+        line-height: 62px
+        color: #2E266F
+        padding-left: 39px
+        padding-top: 10px
+        font-weight: 500
+
+    &__text
+        font-size: 14px
+        line-height: 24px
+        font-weight: 400
+        color: #707070
+        max-width: 599px
+        margin-left: 64px
+        margin-bottom: 30px
+        display: block
+        color: #707070
+
+    &-background
+        grid-area: 1 / 1 / span 7 / span 6
+        z-index: 1
+        background-color: #FFEDDE
+
+@media ( max-width: 1200px )
+    .download
+        display: grid
+        grid-template-rows: 140px 140px 311px 281px 130px
+        grid-template-columns: 65px 514px 623px 65px
+
+        &-phone
+            grid-area: 2 / 3 / span 1 / span 1
+            width: 514px
+            height: 900px
+
+        &-screen
+            grid-area: 2 / 3 / span 1 / span 1
+            width: 319px
+            height: 688px
+            margin-left: 275px
+            margin-top: 2px
+
+        &-item
+            grid-area: 2 / 3 / span 1 / span 1
+            width: 523px
+            height: 531px
+            margin-left: -28px
+            margin-top: 279px
+
+@media ( max-width: 768px )
+    .download
+        display: grid
+        grid-template-rows: 54px 301px 51px 434px 122px
+        grid-template-columns: minmax(54px, 1fr) 503px minmax(54px, 1fr)
+
+        &__title
+            font-size: 36px
+            line-height: 48px
+            padding-top: 2px
+            padding-left: 20px
+            border-left-width: 12px
+            height: 100px
+
+        &__text
+            margin-left: 35px
+
+        &-info
+            grid-area: 2 / 2 / span 1 / span 1
+
+            &-link 
+                margin-left: 35px
+
+        &-phone
+            grid-area: 4 / 2 / span 1 / span 1
+            width: 317px
+            height: 555px
+            margin: auto
+
+        &-screen
+            grid-area: 4 / 2 / span 1 / span 1
+            width: 196px
+            height: 424px
+            margin-left: 183px
+            margin-top: 38px
+
+        &-item
+            grid-area: 4 / 2 / span 1 / span 1
+            width: 349px
+            height: 354px
+            margin-left: -45px
+            margin-top: 123px
+
+        &-background
+            grid-area: 1 / 1 / span 5 / span 3

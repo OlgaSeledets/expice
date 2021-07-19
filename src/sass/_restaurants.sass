@@ -1,7 +1,7 @@
 .restaurants
     display: grid
     grid-template-rows: 50px 211px 120px 383px 253px 50px 211px
-    grid-template-columns: minmax(32px, 1fr) 519px 40px 172px 149px 318px 70px 211px 201px minmax(32px, 1fr)
+    grid-template-columns: minmax(32px, 1fr) 609px 40px 172px 149px 318px 70px 211px 289px minmax(32px, 1fr)
 
     &__title
         grid-area: 2 / 2 / span 1 / span 3
@@ -181,6 +181,10 @@
         grid-area: 1 / 1 / span 7 / span 10
         z-index: 1
         background-color: #FFF5EC
+
+.slider
+    display: grid
+    grid-area: 4 / 2 / span 2 / span 6
 
 @media ( max-width: 1200px )
     .restaurants

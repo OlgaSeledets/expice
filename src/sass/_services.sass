@@ -1,7 +1,7 @@
 .services
     display: grid
     grid-template-rows: 146px 167px 150px 97px 380px 380px 241px
-    grid-template-columns: 135px 199px 181px 108px 297px 93px 100px 670px 135px
+    grid-template-columns: 137px 199px 181px 108px 297px 93px 100px 670px 138px
 
     &__title
         grid-area: 2 / 2 / span 1 / span 3
@@ -50,6 +50,7 @@
                 font-size: 14px
                 line-height: 24px
                 font-weight: 400
+                color: #707070
 
             &-line 
                 width: 84px
@@ -80,6 +81,7 @@
                 font-size: 14px
                 line-height: 24px
                 font-weight: 400
+                color: #707070
 
     &-block3 
         grid-area: 5 / 8 / span 1 / span 1
@@ -105,6 +107,7 @@
                 font-size: 14px
                 line-height: 24px
                 font-weight: 400
+                color: #707070
 
             &-line 
                 width: 192px
@@ -191,8 +194,8 @@
 @media ( max-width: 768px )
     .services
         display: grid
-        grid-template-rows: 60px 301px 28px 81px 126px 68px 27px 79px 117px 79px 30px 285px 265px
-        grid-template-columns: 20px 199px 42px 34px 45px 249px 20px
+        grid-template-rows: 60px 301px 28px 81px 126px 68px 27px 79px 117px 79px 30px 285px 265px 49px
+        grid-template-columns: minmax(20px, 1fr) 199px 42px 34px 45px 249px minmax(20px, 1fr)
 
         &__title
             grid-area: 2 / 2 / span 1 / span 5
@@ -243,6 +246,6 @@
             width: 81px
 
         &-background
-            grid-area: 1 / 1 / span 13 / span 7
+            grid-area: 1 / 1 / span 14 / span 7
 
 

@@ -1,7 +1,7 @@
 .booking
     display: grid
     grid-template-rows: 195px 50px 100px 286px 54px 120px 265px
-    grid-template-columns: 275px 413px 544px 273px 50px 365px
+    grid-template-columns: minmax(275px, 1fr) 413px 544px 273px 50px minmax(368px, 1fr)
 
     &-block
         grid-area: 3 / 2 / span 3 / span 3
@@ -161,7 +161,7 @@
     .booking
         display: grid
         grid-template-rows: 83px 238px 95px 84px
-        grid-template-columns: 203px 273px 96px
+        grid-template-columns: 140px 273px 173px
 
         &-block
             grid-area: 2 / 1 / span 1 / span 3
@@ -213,8 +213,9 @@
         &-item2 
             grid-area: 2 / 3 /span 1 / span 2
             z-index: 3
-            height: 221px
-            margin-top: 132px
+            height: 223px
+            margin-top: 149px
+            margin-left: 64px
 
         &-item3 
             grid-area: 1 / 1/ span 1 / span 1
@@ -226,7 +227,7 @@
             grid-area: 2 / 3 / span 1 / span 1
             z-index: 2
             margin-top: -24px
-            margin-left: 44px
+            margin-left: 109px
 
         &-item5 
             grid-area: 4 / 2 / span 1 / span 1
