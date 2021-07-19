@@ -39,6 +39,8 @@
         padding: 40px 0 82px 60px
         width: 639px
         height: 253px
+        position: absolute
+        margin-top: 383px
         
         &__title
             font-size: 24px
@@ -96,6 +98,8 @@
         padding: 40px 0 82px 60px
         width: 639px
         height: 253px
+        position: absolute
+        margin-top: 383px
         
         &__title
             font-size: 24px
@@ -167,14 +171,14 @@
     &-item2 
         grid-area: 5 / 6 / span 1 / span 1
         z-index: 2
-        margin-left: 38px
+        margin-left: 40px
         margin-top: 235px
 
     &-item3 
         grid-area: 5 / 6 / span 2 / span 1
         z-index: 2
         transform: rotate(90deg)
-        margin-left: 171px
+        margin-left: 173px
         margin-top: 27px
 
     &-background
@@ -182,9 +186,17 @@
         z-index: 1
         background-color: #FFF5EC
 
+    &-container-left
+        position: relative
+
+    &-container-right
+        position: relative
+
 .slider
     display: grid
-    grid-area: 4 / 2 / span 2 / span 6
+    grid-area: 4 / 1 / span 2 / span 6
+    z-index: 3
+    position: relative
 
 @media ( max-width: 1200px )
     .restaurants
@@ -566,5 +578,8 @@
             grid-area: 1 / 1 / span 12 / span 7
             z-index: 1
             background-color: #FFF5EC
+
+    .slider
+        grid-area: 4 / 1 / span 2 / span 6
 
     
