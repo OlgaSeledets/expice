@@ -1,7 +1,7 @@
 .restaurants
     display: grid
     grid-template-rows: 50px 211px 120px 383px 253px 50px 211px
-    grid-template-columns: minmax(32px, 1fr) 609px 40px 140px 149px 318px 70px 211px 323px minmax(32px, 1fr)
+    grid-template-columns: minmax(32px, 1fr) 609px 40px 140px 140px 318px 70px 211px 333px minmax(32px, 1fr)
 
     &__title
         grid-area: 2 / 2 / span 1 / span 3
@@ -78,6 +78,10 @@
         border: none
         cursor: pointer
 
+        &:hover
+            background-color: #31A24C 
+            color: #FFFFFF
+            
     &__photo2
         grid-area: 4 / 4 / span 2 / span 3
         z-index: 3

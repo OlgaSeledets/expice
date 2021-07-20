@@ -1,6 +1,6 @@
 .header
     display: grid
-    grid-template-rows: 130px 140px 644px 67px 89px 225px
+    grid-template-rows: 130px 140px 644px 160px 89px 225px
     grid-template-columns: minmax(32px, 1fr) 755px 219px 480px 402px minmax(32px, 1fr)
 
     &-logo
@@ -118,6 +118,11 @@
             font-size: 30px
             color: #FFFFFF
             cursor: pointer
+            transition: background .2s 
+
+            &:hover
+                background-color: #31A24C
+                border: none
 
     &-img1
         grid-area: 2 / 4 / span 1 / span 2
@@ -226,7 +231,7 @@
 @media ( max-width: 1200px )
     .header
         display: grid
-        grid-template-rows: 120px 93px 510px 65px 187px
+        grid-template-rows: 120px 93px 510px 74px 187px
         grid-template-columns: minmax(32px, 1fr) 689px 230px 280px minmax(32px, 1fr)
 
         &-logo
@@ -270,8 +275,8 @@
 
             &__item1 
                 width: 120%
-                margin-left: -79px
-                margin-top: -48px
+                margin-top: -13px
+                margin-right: -2px
 
         &-img2 
             grid-area: 2 / 3 / span 1 / span 2
@@ -367,7 +372,7 @@
 @media ( max-width: 768px )
     .header
         display: grid
-        grid-template-rows: 70px 37px 346px 85px 514px 104px
+        grid-template-rows: 70px 37px 346px 85px 544px 104px
         grid-template-columns: minmax(32px, 1fr) 378px 13px 97px 55px minmax(32px, 1fr)
 
         &-inner
@@ -415,6 +420,7 @@
             &__item1 
                 width: 116%
                 margin-left: -20px
+                margin-top: -15px
 
         &-img2 
             grid-area: 5 / 2 / span 1 / span 3
