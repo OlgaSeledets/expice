@@ -16,7 +16,7 @@
 
         &__title
             font-size: 36px
-            color: #2E266F
+            color: $title-color
             font-weight: 500
             text-align: center
             margin-bottom: 60px
@@ -24,7 +24,7 @@
         &__line
             width: 230px
             height: 15px
-            background-color: #FE043C
+            background-color: $main-color
             margin: 0 auto
 
         &__search
@@ -45,7 +45,7 @@
                 position: absolute
 
             &-input::placeholder
-                color: #2E266F
+                color: $input-color
                 opacity: 0.6
 
             &-btn
@@ -54,7 +54,7 @@
                 height: 62px
                 font-weight: 600
                 margin: 14px
-                background: #FE043C
+                background: $main-color
                 border: none
                 font-size: 30px
                 color: #FFFFFF
@@ -109,18 +109,15 @@
     .booking
         display: grid
         grid-template-rows: 125px 75px 41px 286px 54px 36px 126px
-        grid-template-columns: 333px 544px 95px 65px 153px
+        grid-template-columns: 333px 544px 95px 65px 229px
 
         &-block
             grid-area: 3 / 1 / span 3 / span 3
-            z-index: 2
             width: 971px
             height: 417px
-            background-color: #FFFFFF
 
         &-card
             grid-area: 4 / 2 / span 1 / span 1
-            z-index: 2
 
         &-lists
             grid-area: 5 / 2 / span 1 / span 1
@@ -135,10 +132,7 @@
             height: 1105px
 
         &-item2 
-            grid-area: 3 / 5 / span 1 / span 2
-            z-index: 2
-            height: 377px
-            margin: 0
+            display: none
 
         &-item3 
             grid-area: 2 / 2 / span 1 / span 1
@@ -161,7 +155,7 @@
     .booking
         display: grid
         grid-template-rows: 83px 238px 95px 84px
-        grid-template-columns: 140px 273px 173px
+        grid-template-columns: 140px 273px 198px
 
         &-block
             grid-area: 2 / 1 / span 1 / span 3
@@ -200,37 +194,25 @@
 
         &-lists
             grid-area: 3 / 2 / span 1 / span 1
-            z-index: 2
             padding: 0
 
         &-item1 
             grid-area: 1 / 1 / span 3 / span 2
-            z-index: 3
             margin-top: -241px
             margin-left: -156px
             height: 841px
 
-        &-item2 
-            grid-area: 2 / 3 /span 1 / span 2
-            z-index: 3
-            height: 223px
-            margin-top: 149px
-            margin-left: 64px
-
         &-item3 
             grid-area: 1 / 1/ span 1 / span 1
-            z-index: 2
             margin-left: 254px
             margin-top: 22px
 
         &-item4 
             grid-area: 2 / 3 / span 1 / span 1
-            z-index: 2
             margin-top: -24px
             margin-left: 109px
 
         &-item5 
             grid-area: 4 / 2 / span 1 / span 1
-            z-index: 2
             margin-left: -178px
             margin-top: 16px

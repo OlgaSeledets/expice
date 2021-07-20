@@ -40,8 +40,8 @@
                 </a>
             </div>
         </div>
-        <div class="header-text">
-            <h1 class="header-text__title">Food</h1>
+        <div class="header-text wow animate__animated animate__bounce animate__zoomIn">
+            <h1 class="header-text__title">Food</h1> 
             <h2 class="header-text__subtitle">Discover Restaurant & Delicious Food</h2>
             <div class="header-search">
                 <input type="search" class="header-search__input" pattern="[A-Za-z]" placeholder="Search restaurant, Food">
@@ -49,7 +49,10 @@
             </div>
         </div>
         <div class="header-img1 img">
-            <img class="header-img1__item1" src="img/background-item1.png">
+            <div class="slider1">
+                <img class="header-img1__item1" data-wow-delay="1.3s" src="img/background-item1.png">
+                <img class="header-img1__item1" src="img/background-plate.png">
+            </div>
         </div>
         <div class="header-img2 img">
             <img class="header-img2__item2" src="img/background-item2.png">
@@ -78,12 +81,12 @@
         <div class="b-right"></div>
     </header>
     <section class="restaurants">
-        <h1 class="restaurants__title">Some Top Restaurant For Dining In Or Take Away!</h1>
-        <span class="restaurants__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing
+        <h1 class="title restaurants__title">Some Top Restaurant For Dining In Or Take Away!</h1>
+        <span class="text restaurants__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing
         cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a,
         tincidunt. Volutpat metus id amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi tellus.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed.</span>
-        <div class="slider">
+        <div class="slider wow animate__animated animate__fadeInLeft ">
             <!--<div class="restaurants-container"> -->
                 <div class="restaurants-container-left">
                     <div class="restaurants-info-left">
@@ -171,27 +174,28 @@
                 </div>
             </div>
         </div>
-        <img class="booking-item1" src="img/booking-item1.png" alt="">
-        <img class="booking-item2" src="img/booking-item2.png" alt="">
+        <img class="booking-item1 wow animate__animated animate__tada" src="img/booking-item1.png" alt="">
+        <img class="booking-item2 wow animate__animated animate__tada" src="img/booking-item2.png" alt="">
         <img class="booking-item3" src="img/booking-item3.svg" alt="">
         <img class="booking-item4" src="img/booking-item4.svg" alt="">
         <img class="booking-item5" src="img/booking-item3.svg" alt="">
         <div class="booking-background"></div>
     </section>
     <section class="services">
-        <h1 class="services__title">Our Services</h1>
-        <span class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing
+        <h1 class="title services__title">Our Services</h1>
+        <span class="text services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing
         cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a,
         tincidunt. Volutpat metus id amet, nam hac magna accumsan. Nascetur ac tortor purus ultrices morbi tellus.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing cursus auctor eget sed.</span>
-        <div class="services-block1">
+        <div class="services-block1 wow animate__animated animate__heartBeat">
             <img class="services-block1__icon1" src="img/services-icon1.svg" alt="">
         </div>
         <div class="services-block1-text">
             <h2 class="services-block1-text__title">Advanced Table Booking</h2>
             <span class="services-block1-text__text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.</span>
         </div>
-        <div class="services-block2">
+        <img class="services-arrow1" src="img/services-arrow1.svg" alt="">
+        <div class="services-block2 wow animate__animated animate__heartBeat" data-wow-delay="0.6s">
             <img class="services-block2__icon2" src="img/services-icon2.svg" alt="">
         </div>
         <img class="services-arrow2" src="img/services-arrow2.svg" alt="">
@@ -199,7 +203,7 @@
             <h2 class="services-block2-text__title">Food For Free 24/7</h2>
             <span class="services-block2-text__text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.</span>
         </div>
-        <div class="services-block3">
+        <div class="services-block3 wow animate__animated animate__heartBeat" data-wow-delay="1.3s">
             <img class="services-block3__icon3" src="img/services-icon3.svg" alt="">
         </div>
         <div class="services-block3-text">
@@ -211,71 +215,71 @@
     </section>
     <section class="foods">
         <div class="foods-inner">
-            <h1 class="foods-inner__title">Explore Our Foods</h1>
-            <span class="foods-inner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+            <h1 class="title foods-inner__title">Explore Our Foods</h1>
+            <span class="text foods-inner__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
             adipiscing cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo
             bibendum in a, tincidunt. Volutpat metus id amet.</span>
         </div>
         <img class="foods-img1" src="img/foods-img1.png" alt="">
-        <div class="foods-block1">
+        <div class="foods-block1 animate__animated animate__bounce wow animate__fadeInUp">
             <div class="foods-block-title">
                 <h1 class="foods-block-title__title">Hand Sandwich</h1>
                 <span class="foods-block-title__price">$10.25</span>
             </div>
-            <p class="foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
+            <p class="text foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
             Adipiscing.</p>
         </div>
         <img class="foods-img2" src="img/foods-img2.png" alt="">
-        <div class="foods-block2">
+        <div class="foods-block2 animate__animated animate__bounce wow animate__fadeInUp" data-wow-delay="0.1s">
             <div class="foods-block-title">
                 <h1 class="foods-block-title__title">Hand Sandwich</h1>
                 <span class="foods-block-title__price">$10.25</span>
             </div>
-            <p class="foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
+            <p class="text foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
             Adipiscing.</p>
         </div>
         <img class="foods-img3" src="img/foods-img3.png" alt="">
-        <div class="foods-block3">
+        <div class="foods-block3 animate__animated animate__bounce wow animate__fadeInUp" data-wow-delay="0.2s">
             <div class="foods-block-title">
                 <h1 class="foods-block-title__title">Hand Sandwich</h1>
                 <span class="foods-block-title__price">$10.25</span>
             </div>
-            <p class="foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
+            <p class="text foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
             Adipiscing.</p>
         </div>
         <img class="foods-img4" src="img/foods-img4.png" alt="">
-        <div class="foods-block4">
+        <div class="foods-block4 animate__animated animate__bounce wow animate__fadeInUp" data-wow-delay="0.3s">
             <div class="foods-block-title">
                 <h1 class="foods-block-title__title">Hand Sandwich</h1>
                 <span class="foods-block-title__price">$10.25</span>
             </div>
-            <p class="foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
+            <p class="text foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
             Adipiscing.</p>
         </div>
         <img class="foods-img5" src="img/foods-img5.png" alt="">
-        <div class="foods-block5">
+        <div class="foods-block5 animate__animated animate__bounce wow animate__fadeInUp" data-wow-delay="0.4s">
             <div class="foods-block-title">
                 <h1 class="foods-block-title__title">Hand Sandwich</h1>
                 <span class="foods-block-title__price">$10.25</span>
             </div>
-            <p class="foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
+            <p class="text foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
             Adipiscing.</p>
         </div>
         <img class="foods-img6" src="img/foods-img6.png" alt="">
-        <div class="foods-block6">
+        <div class="foods-block6 animate__animated animate__bounce wow animate__fadeInUp" data-wow-delay="0.5s">
             <div class="foods-block-title">
                 <h1 class="foods-block-title__title">Hand Sandwich</h1>
                 <span class="foods-block-title__price">$10.25</span>
             </div>
-            <p class="foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
+            <p class="text foods-block-text">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Est,
             Adipiscing.</p>
         </div>
         <div class="foods-background"></div>
     </section>
     <section class="download">
-        <div class="download-info">
-            <h1 class="download__title">Download app for Exciting Deals</h1>
-            <span class="download__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing
+        <div class="download-info wow animate__animated animate__bounce animate__zoomIn">
+            <h1 class="title download__title">Download app for Exciting Deals</h1>
+            <span class="text download__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est, adipiscing
             cursus auctor eget sed phasellus senectus. Ut tellus donec vestibulum tristique leo bibendum in a,
             tincidunt.</span>
             <div class="download-info-link">
@@ -297,14 +301,14 @@
         </div>
         <img class="download-phone" src="img/download-phone.png" alt="">
         <img class="download-screen" src="img/download-screen.png" alt="">
-        <img class="download-item" src="img/download-item.png" alt="">
+        <img class="download-item wow animate__animated animate__tada" src="img/download-item.png" alt="">
         <div class="download-background"></div>
     </section>
     <footer class="footer">
         <img class="footer-img" src="img/footer-img.png" alt="">
         <div class="footer-info">
             <h2 class="footer-info__title">Get notified about new amazing products</h2>
-            <span class="footer-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
+            <span class="text footer-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est,
             adipiscing cursus auctor eget sed phasellus senectus.</span>
             <div class="footer-info-search">
                 <input type="search" class="footer-info-search__input" pattern="[A-Za-z]" placeholder="E-mail">
