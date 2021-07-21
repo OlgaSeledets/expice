@@ -17,17 +17,9 @@
 
     &-img1 
         grid-area: 3 / 2 / span 1 / span 1
-        z-index: 2
-        width: 530px
-        height: 403px
 
     &-block1 
         grid-area: 4 / 2 / span 1 / span 1
-        z-index: 2
-        background-color: #FFFFFF
-        box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5)
-        border-radius: 0 0 25px 25px
-        padding: 30px 
 
     &-block-title
         display: flex
@@ -50,78 +42,54 @@
 
     &-img2 
         grid-area: 3 / 4 / span 1 / span 1
-        z-index: 2
-        width: 530px
-        height: 403px
 
     &-block2 
         grid-area: 4 / 4 / span 1 / span 1
-        z-index: 2
-        background-color: #FFFFFF
-        box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5)
-        border-radius: 0 0 25px 25px
-        padding: 30px
 
     &-img3 
         grid-area: 3 / 6 / span 1 / span 1
-        z-index: 2
-        width: 530px
-        height: 403px
 
     &-block3 
         grid-area: 4 / 6 / span 1 / span 1
-        z-index: 2
-        background-color: #FFFFFF
-        box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5)
-        border-radius: 0 0 25px 25px
-        padding: 30px
 
     &-img4 
         grid-area: 6 / 2 / span 1 / span 1
-        z-index: 2
-        width: 530px
-        height: 403px
 
     &-block4 
         grid-area: 7 / 2 / span 1 / span 1
-        z-index: 2
-        background-color: #FFFFFF
-        box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5)
-        border-radius: 0 0 25px 25px
-        padding: 30px
 
     &-img5 
         grid-area: 6 / 4 / span 1 / span 1
-        z-index: 2
-        width: 530px
-        height: 403px
 
     &-block5 
         grid-area: 7 / 4 / span 1 / span 1
-        z-index: 2
-        background-color: #FFFFFF
-        box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5)
-        border-radius: 0 0 25px 25px
-        padding: 30px
 
     &-img6 
         grid-area: 6 / 6 / span 1 / span 1
-        z-index: 2
-        width: 530px
-        height: 403px
 
     &-block6 
         grid-area: 7 / 6 / span 1 / span 1
-        z-index: 2
-        background-color: #FFFFFF
-        box-shadow: 0px 4px 4px rgba(235, 241, 245, 0.5)
-        border-radius: 0 0 25px 25px
-        padding: 30px
 
     &-background
         grid-area: 1 / 1 / span 8 / span 7
         z-index: 1
         background-color: #FFF5EC
+
+@media ( max-width: 1550px )
+    .foods
+        display: grid
+        grid-template-rows: 116px 48px 322px 119px 48px 322px 119px 119px
+        grid-template-columns: minmax(109px, 1fr) 424px 25px 424px 25px 424px minmax(109px, 1fr)
+
+        &-block1 
+            &__title
+                font-size: 19px
+
+            &__price
+                font-size: 19px
+
+        &-block-text 
+            max-width: 229px
 
 @media ( max-width: 1200px )
     .foods

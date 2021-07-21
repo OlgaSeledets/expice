@@ -1,7 +1,7 @@
 .download
     display: grid
     grid-template-rows: 100px 295px 311px 339px 50px
-    grid-template-columns: 135px 514px 300px 753px 220px
+    grid-template-columns: minmax(135px, 1fr) 514px 300px 753px minmax(220px, 1fr)
 
     &-phone
         grid-area: 2 / 4 / span 3 / span 1
@@ -103,6 +103,70 @@
         z-index: 1
         background-color: #FFEDDE
 
+@media ( max-width: 1550px )
+    .download
+        display: grid
+        grid-template-rows: 80px 236px 249px 271px 40px
+        grid-template-columns: 108px 411px 240px 602px 176px
+
+        &-phone
+            margin-top: -48px
+            margin-left: 106px
+            width: 522px
+            height: 915px
+
+        &-screen
+            margin-top: 14px
+            margin-left: 253px
+            width: 324px
+            height: 700px
+
+        &-item
+            margin-top: 228px
+            margin-left: -92px
+            width: 542px
+            height: 550px
+
+        &-info
+            &-link
+                max-width: 301px
+                margin-left: 51px
+
+                &-left
+                    border-radius: 8px
+                    width: 142px
+                    height: 39px
+                    padding: 7px 18px
+
+                    &__title
+                        font-size: 10px
+
+                    &__subtitle
+                        font-size: 11px
+
+                &-right
+                    border-radius: 8px
+                    width: 142px
+                    height: 39px
+                    padding: 7px 6px 7px 18px
+
+                    &__title
+                        font-size: 10px
+
+                    &__subtitle
+                        font-size: 11px
+
+        &__title
+            border-left-width: 20px
+            height: 112px
+            padding-left: 31px
+            padding-top: 8px
+
+        &__text
+            max-width: 479px
+            margin-left: 51px
+            margin-bottom: 24px
+
 @media ( max-width: 1200px )
     .download
         display: grid
@@ -118,7 +182,7 @@
             grid-area: 2 / 3 / span 1 / span 1
             width: 319px
             height: 688px
-            margin-left: 275px
+            margin-left: 249px
             margin-top: 2px
 
         &-item

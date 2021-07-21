@@ -96,6 +96,53 @@
         z-index: 1
         background-color: #FFF5EC
 
+@media ( max-width: 1550px )
+    .footer
+        display: grid
+        grid-template-rows: 58px 160px 322px 148px 84px
+        grid-template-columns: minmax(520px, 1fr) 468px 61px 118px 78px 158px minmax(134px, 1fr)
+
+        &-img
+            width: 600px
+            height: 770px
+
+        &-info
+            &__title
+                font-size: 29px
+                line-height: 38px
+
+            &__text
+                font-size: 11px
+                line-height: 19px
+
+            &-search
+                width: 435px
+                height: 72px
+                margin: 48px auto
+
+                &__input
+                    width: 435px
+                    height: 72px
+                    padding: 30px 48px
+                    font-size: 14px
+                    border-radius: 80px
+
+                &__btn
+                    width: 45px
+                    height: 45px
+                    border-radius: 40px
+                    margin: 14px
+                    font-size: 24px
+
+            &-nav
+                max-width: 344px
+
+                &__link
+                    font-size: 13px
+
+        &-copyright
+            font-size: 11px
+
 @media ( max-width: 1200px )
     .footer
         display: grid

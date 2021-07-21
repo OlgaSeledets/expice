@@ -1,7 +1,7 @@
 .services
     display: grid
     grid-template-rows: 146px 167px 150px 97px 380px 380px 241px
-    grid-template-columns: 137px 199px 181px 108px 297px 93px 100px 670px 138px
+    grid-template-columns: minmax(137px, 1fr) 199px 181px 108px 297px 93px 100px 670px minmax(138px, 1fr)
 
     &__title
         grid-area: 2 / 2 / span 1 / span 3
@@ -123,6 +123,85 @@
         grid-area: 1 / 1 / span 7 / span 10
         z-index: 1
         background-color: #FFF5EC
+
+@media ( max-width: 1550px )
+    .services
+        display: grid
+        grid-template-rows: 117px 134px 120px 78px 304px 304px 193px
+        grid-template-columns: 110px 159px 145px 86px 238px 74px 80px 536px 110px
+
+        &__title
+            border-left-width: 20px
+            height: 112px
+            padding-left: 24px
+            padding-top: 28px
+
+        &__text
+            padding-top: 24px
+            max-width: 479px
+
+        &-block1 
+            width: 312px
+            height: 304px
+            padding: 72px 76px
+
+            &-text 
+                padding: 106px 0 96px 40px
+                
+                &__title
+                    font-size: 19px
+                    line-height: 26px
+
+                &__text
+                    font-size: 11px
+                    line-height: 19px
+
+                &-line 
+                    width: 67px
+                    height: 3px
+                    margin: 16px auto
+
+        &-block2 
+            width: 312px
+            height: 304px
+            padding: 72px 76px
+
+            &-text 
+                padding: 104px 0 106px 0
+                
+                &__title
+                    font-size: 19px
+                    line-height: 26px
+
+                &__text
+                    font-size: 11px
+                    line-height: 19px
+
+        &-block3 
+            width: 536px
+            height: 606px
+            padding: 130px 139px 282px 139px
+
+            &-text 
+                padding: 72px 170px 98px 170px
+                
+                &__title
+                    font-size: 19px
+                    line-height: 26px
+
+                &__text
+                    font-size: 11px
+                    line-height: 19px
+
+                &-line 
+                    width: 154px
+                    margin: 16px auto
+
+        &-arrow1 
+            margin: 152px -27px
+
+        &-arrow2 
+            margin: 152px 40px
 
 @media ( max-width: 1200px )
     .services

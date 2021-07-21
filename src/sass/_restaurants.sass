@@ -8,20 +8,20 @@
         border-left-style: solid
         border-left-width: 25px
         border-left-color: $main-color
-        z-index: 2
+        z-index: 5
         color: $title-color
         padding-left: 30px
         padding-top: 10px
 
     &__text
         grid-area: 2 / 6 / span 1 / span 3
-        z-index: 2
+        z-index: 5
         color: $text-color
         padding-top: 63px
 
     &__photo1
         grid-area: 4 / 1 / span 2 / span 2
-        z-index: 3
+        z-index: 6
         width: 639px
         height: 636px
 
@@ -29,7 +29,7 @@
         grid-area: 5 / 1 / span 1 / span 2
         background-color: rgba(254, 4, 60, 0.7)
         border-radius: 0px 0px 20px 20px
-        z-index: 3
+        z-index: 6
         padding: 40px 0 82px 60px
         width: 639px
         height: 253px
@@ -84,7 +84,7 @@
             
     &__photo2
         grid-area: 4 / 4 / span 2 / span 3
-        z-index: 3
+        z-index: 6
         width: 639px
         height: 636px
 
@@ -92,7 +92,7 @@
         grid-area: 5 / 4 / span 1 / span 3
         background-color: rgba(254, 4, 60, 0.7)
         border-radius: 0px 0px 20px 20px
-        z-index: 3
+        z-index: 6
         padding: 40px 0 82px 60px
         width: 639px
         height: 253px
@@ -143,7 +143,7 @@
 
     &-arrow
         grid-area: 4 / 8 / span 1 / span 1
-        z-index: 2
+        z-index: 5
         cursor: pointer
 
         &__inner
@@ -163,26 +163,26 @@
 
     &-item1
         grid-area: 3 / 1 / span 1 / span 2
-        z-index: 2
+        z-index: 5
         margin-left: 20px
         margin-top: 50px
 
     &-item2 
         grid-area: 5 / 6 / span 1 / span 1
-        z-index: 2
+        z-index: 5
         margin-left: 40px
         margin-top: 235px
 
     &-item3 
         grid-area: 5 / 6 / span 2 / span 1
-        z-index: 2
+        z-index: 5
         transform: rotate(90deg)
         margin-left: 173px
         margin-top: 27px
 
     &-background
         grid-area: 1 / 1 / span 7 / span 10
-        z-index: 1
+        z-index: 4
         background-color: #FFF5EC
 
     &-container-left
@@ -194,18 +194,138 @@
 .slider
     display: grid
     grid-area: 4 / 1 / span 2 / span 6
-    z-index: 3
+    z-index: 6
     position: relative
     margin-left: -40px
+
+@media (max-width: 1550px )
+    .restaurants
+        display: grid
+        grid-template-rows: 40px 167px 96px 306px 202px 40px 167px
+        grid-template-columns: minmax(26px, 1fr) 487px 32px 112px 112px 254px 56px 169px 266px minmax(26px, 1fr)
+
+        &__title
+            font-size: 38px
+            border-left-width: 20px
+            padding-left: 24px
+            margin-bottom: 2px
+
+        &__text
+            padding-top: 50px
+
+        &__photo1
+            width: 511px
+            height: 508px
+
+        &-arrow
+            &__text
+                font-size: 11px
+                margin-left: 104px
+
+        &-info-left
+            border-radius: 0px 0px 16px 16px
+            padding: 32px 0 66px 48px
+            width: 511px
+            height: 202px
+            margin-top: 306px
+            
+            &__title
+                font-size: 19px
+                margin: 0 0 12px 0
+
+            &__text
+                font-size: 11px
+                line-height: 19px
+                margin-bottom: 16px
+                max-width: 298px
+
+        &-inner
+            &__item
+                width: 16px
+                height: 20px
+
+            &__address
+                font-size: 11px
+                padding: 4px 0 4px 8px
+
+        &-btn
+            margin-top: -11px
+
+        &__btn
+            border-radius: 80px 0px 0px 80px
+            width: 166px
+            height: 46px
+            font-size: 11px
+            
+        &__photo2
+            width: 511px
+            height: 509px
+
+        &-info-right
+            border-radius: 0px 0px 16px 16px
+            padding: 32px 0 66px 48px
+            width: 511px
+            height: 202px
+            margin-top: 306px
+            
+            &__title
+                font-size: 19px
+                margin: 0 0 12px 0
+
+            &__text
+                font-size: 11px
+                line-height: 19px
+                margin-bottom: 16px
+                max-width: 298px
+
+            &__item
+                width: 16px
+                height: 20px
+
+            &__address
+                font-size: 11px
+                padding: 4px 0 4px 8px
+
+        &-btn
+            margin-top: -11px
+
+        &__btn
+            border-radius: 80px 0px 0px 80px
+            width: 166px
+            height: 46px
+            font-size: 11px
+
+            &__inner
+                margin-bottom: 16px
+                margin-top: 224px
+
+            &__item
+                margin-left: -20px
+
+            &__text
+                font-size: 11px
+                margin-left: 91px
+
+        &-item1
+            margin-left: 16px
+            margin-top: 40px
+
+        &-item2 
+            margin-left: 3px
+            margin-top: 194px
+
+        &-item3 
+            margin-left: 138px
+            margin-top: 22px
 
 @media ( max-width: 1200px )
     .restaurants
         display: grid
         grid-template-rows: 50px 221px 115px 298px 195px 70px 61px
-        grid-template-columns: minmax(32px, 1fr) 462px 17px 210px 76px 208px 225px minmax(32px, 1fr)
+        grid-template-columns: minmax(32px, 1fr) 462px 17px 210px 76px 208px 229px minmax(32px, 1fr)
 
         &__title
-            max-width: 663px
+            max-width: 613px
 
         &__text
             max-width: 362px
